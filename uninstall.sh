@@ -1,7 +1,5 @@
 while true; do
-    read -p "Do you wish to uninstall this program?" yn
-    read -p "press y to uninstall" yn
-    read -p "press n to cancle uninstall" yn
+    read -p "Do you wish to uninstall this program? press y to uninstall & press n to cancle uninstall (y/n)                        " yn
     case $yn in
         [Yy]* ) make install; break;;
         [Nn]* ) exit;;
@@ -24,4 +22,5 @@ rm -rf termux-startup-tone
 cd
 clear
 kill process -1
+
 

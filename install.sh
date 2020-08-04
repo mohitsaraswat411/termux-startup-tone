@@ -1,7 +1,5 @@
 while true; do
-    read -p "Do you wish to install this program?" yn
-    read -p "press y to install " yn
-    read -p "press n to cancle install " yn
+    read -p " Do you wish to install this program? press y to install & press n to cancle install (y/n)                             " yn
     case $yn in
         [Yy]* ) make install; break;;
         [Nn]* ) exit;;
@@ -28,4 +26,5 @@ cd ~/
 screenfetch
 cd ..
 clear
+
 
